@@ -1,17 +1,18 @@
 
 class Enemy_At{
     int health,attack_power;
-    void display()
-    {
 
-        System.out.println("Shoot with the health and attack power of: "+health+" "+attack_power);
-    }
 }
 class Enemy1 extends Enemy_At{
     void fly(int health,int attack_power)
     {
         this.health=health;
         this.attack_power=attack_power;
+    }
+    void display()
+    {
+
+        System.out.println("Fly with the health and attack power of: "+health+" "+attack_power);
     }
 
 }
@@ -20,6 +21,11 @@ class Enemy2 extends Enemy_At{
     {
         this.health=health;
         this.attack_power=attack_power;
+    }
+    void display()
+    {
+
+        System.out.println("Shoot with the health and attack power of: "+health+" "+attack_power);
     }
 
 }
